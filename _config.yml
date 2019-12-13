@@ -1,1 +1,6 @@
-name: Cakr Factory
+name: Cake Factory
+base_url: "/"
+url: "http://127.0.0.1:4000/"
+
+collections:
+  - sections

@@ -1,0 +1,45 @@
+---
+title: shows
+layout: default
+---
+{% assign past_shows = site.data.shows | where: "past", true %}
+{% assign upcoming_shows = site.data.shows | where: "past", false %}
+
+<div id="past">
+  <label>Past</label>
+  {% for show in past_shows %}
+      <div class="show">
+        <a href="{{ show.link }}"> Cake Factory #29</a>
+        <div class="date">date: {{ show.date }}</div>
+        <div class="location">location: {{ show.location }}</div>
+        <div class="lineup">lineup:
+          {% for artist in show.lineup %}
+            {% if forloop.first == true %}
+              <span>{{ artist }}</span>
+            {% else %}
+              <span>//{{ artist }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+    </div>
+  {% endfor %}
+</div>
+<div id="upcoming">
+  <label>Upcoming</label>
+  {% for show in upcoming_shows %}
+    <div class="show">
+      <a href="{{ show.link }}">Cake Factory #29</a>
+      <div class="date">date: {{ show.date }}</div>
+      <div class="location">location: {{ show.location }}</div>
+      <div class="lineup">lineup:
+        {% for artist in show.lineup %}
+          {% if forloop.first == true %}
+            <span>{{ artist }}</span>
+          {% else %}
+            <span>//{{ artist }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

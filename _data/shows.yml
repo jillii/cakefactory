@@ -1,0 +1,30 @@
+- title: Cake Factory \#31
+  date: Feb 1, 19
+  location: Boston
+  lineup:
+    - Fathom Pira
+    - Hardy & Hughes
+    - Passersby
+    - '!@#$%'
+  link: https://www.facebook.com/events/2505057896251585/
+  past: false
+
+- title: Cake Factory \#30
+  date: Nov 30, 19
+  location: Boston
+  lineup:
+    - Omniplus
+    - Dinnersss
+    - Jimmy Chan
+  link: https://www.facebook.com/events/975865359448979/
+  past: true
+
+- title: Cake Factory \#29
+  date: Oct 26, 19
+  location: Boston
+  lineup:
+    - Graaves
+    - NADLOR
+    - FEN
+  link: https://www.facebook.com/events/2505057896251585/
+  past: true

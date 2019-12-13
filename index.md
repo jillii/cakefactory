@@ -3,6 +3,12 @@ title: My page
 layout: default
 ---
 
-# {{ page.title }}
-
-Content is written in [Markdown](https://learnxinyminutes.com/docs/markdown/). Plain text format allows you to focus on your **content**.
+<main class="page-content" aria-label="Content" onclick="$('.site-nav').removeClass('active')">
+  {% for section in site.sections %}
+    <section id="{{ section.title }}">
+      <div class="wrapper">
+        {{ section.content }}
+      </div>
+    </section>
+  {% endfor %}
+</main>

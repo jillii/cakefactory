@@ -1,0 +1,21 @@
+---
+title: label
+layout: default
+---
+{% for release in site.data.releases %}
+    <div class="release">
+        <label>Name: </label><span>{{ release.title }}</span>
+        <br>
+        <label>Artist: </label><span>{{ release.artist }}</span>
+        <br>
+        <label>Date: </label><span>{{ release.date }}</span>
+        <br>
+        <label>Tracks: </label>
+        <ol>
+            {% for track in release.tracks %}
+                <li>{{ track }}</li>
+            {% endfor %}
+        </ol>
+        <a href="{{ release.link }}" class="listen">Listen</a>
+    </div>
+{% endfor %}
