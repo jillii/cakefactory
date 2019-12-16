@@ -22,7 +22,6 @@ $(document).ready(function(){
 		scroll_to($hash);
 	} else {
 		$('#intro').addClass('active');
-		$('.page-link:first-of-type').addClass('active')
 	}
 });
 
