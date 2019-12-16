@@ -19,6 +19,6 @@
   font-awesome: true
 
 - title: resident advisor
-  link: https://www.residentadvisor.net/profile/cakefactory
+  link: https://www.residentadvisor.net/profile/cakefactory/test
   icon: /assets/images/ra.png
   font-awesome: false
