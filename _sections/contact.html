@@ -3,12 +3,14 @@ title: contact
 layout: default
 ---
 <h4>Contact cake factory</h4>
-<form method="post" id="contact-form">
-    <label>Name</label>
+
+<form id="contact-form" action="https://getsimpleform.com/messages?form_api_token=3757f10fb2e6ec83f5b80b3facba9248" method="post">
+   <!-- <input type='hidden' name='redirect_to' value="{{ '#thankyou' | base_url }}" /> -->
+   <label>Name</label>
     <input type="text" name="name">
     <label>Email</label>
-    <input type="text" name="email">
+    <input type="email" name="email">
     <label>Message</label>
     <textarea type="textarea" name="message"></textarea>
-    <a href="#" class="btn">Send</a>
+    <input type='submit' class='btn' value='Send' />
 </form>
