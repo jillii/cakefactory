@@ -1,24 +1,24 @@
 - title: facebook
-  link: http://facebook.com
+  link: https://www.facebook.com/cakefact/
   icon: fab fa-facebook-f
   font-awesome: true
 
 - title: instagram
-  link: http://instagram.com
+  link: https://www.instagram.com/cakefactorybos/
   icon: fab fa-instagram
   font-awesome: true
 
 - title: bandcamp
-  link: http://bandcamp.com
+  link: https://cakefactory.bandcamp.com/
   icon: fab fa-bandcamp
   font-awesome: true
 
 - title: soundcloud
-  link: http://soundcloud.com
+  link: https://soundcloud.com/cakefactoryboston
   icon: fab fa-soundcloud
   font-awesome: true
 
 - title: resident advisor
-  link: http://residentadvisor.com
+  link: https://www.residentadvisor.net/profile/cakefactory
   icon: /assets/images/ra.png
   font-awesome: false
