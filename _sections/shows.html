@@ -10,7 +10,7 @@ weight: 2
   <label>Past</label>
   {% for show in past_shows %}
       <div class="show">
-        <a href="{{ show.link }}"> Cake Factory #29</a>
+        <a href="{{ show.link }}">{{ show.title }}</a>
         <div class="date">date: {{ show.date }}</div>
         <div class="location">location: {{ show.location }}</div>
         <div class="lineup">lineup:
@@ -29,7 +29,7 @@ weight: 2
   <label>Upcoming</label>
   {% for show in upcoming_shows %}
     <div class="show">
-      <a href="{{ show.link }}">Cake Factory #29</a>
+      <a href="{{ show.link }}">{{ show.title }}</a>
       <div class="date">date: {{ show.date }}</div>
       <div class="location">location: {{ show.location }}</div>
       <div class="lineup">lineup:
