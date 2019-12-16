@@ -1,1 +1,6 @@
 .jekyll-cache
+node_module
+gulpfile.js
+package*.json
+assets/_js
+assets/_sass
