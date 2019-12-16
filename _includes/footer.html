@@ -2,11 +2,16 @@
   <div class="wrapper">
     <label>cake factory on the internet</label>
     <div class="socials">
-      <a href="facebook.com">facebook</a>
-      <a href="instagram.com">instagram</a>
-      <a href="bandcamp.com">bandcamp</a>
-      <a href="soundcloud.com">soundcloud</a>
-      <a href="residentadvisor.com">resident advisor</a>
+      {% for social in site.data.socials %}
+      	{% assign font-awesome = '' %}
+      	{% assign bg-image = '' %}
+      	{% if social.font-awesome %}
+		    {% assign font-awesome = social.icon %}
+		{% else %}
+			{% assign bg-image = social.icon %}
+		{% endif %}
+        <a class="{{ font-awesome }}" style="background-image: url({{ bg-image | relative_url }})"href="{{ social.link }}"></a>
+      {% endfor %}
     </div>
   </div>
 </footer>

@@ -1,0 +1,24 @@
+- title: facebook
+  link: http://facebook.com
+  icon: fab fa-facebook-f
+  font-awesome: true
+
+- title: instagram
+  link: http://instagram.com
+  icon: fab fa-instagram
+  font-awesome: true
+
+- title: bandcamp
+  link: http://bandcamp.com
+  icon: fab fa-bandcamp
+  font-awesome: true
+
+- title: soundcloud
+  link: http://soundcloud.com
+  icon: fab fa-soundcloud
+  font-awesome: true
+
+- title: resident advisor
+  link: http://residentadvisor.com
+  icon: /assets/images/ra.png
+  font-awesome: false
