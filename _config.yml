@@ -1,6 +1,7 @@
 name: Cake Factory
-base_url: /
-url: "http://127.0.0.1:4000/"
+base_url: /cakefactory
+url: http://127.0.0.1:4000/
+remote_url: https://jillii.github.io/cakefactory/
 
 collections:
   - sections
