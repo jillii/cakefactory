@@ -4,3 +4,4 @@ gulpfile.js
 package*.json
 assets/_js
 assets/_sass
+_site
