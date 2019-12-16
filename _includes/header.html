@@ -9,11 +9,12 @@
       </label>
 
       <div class="trigger">
-        <a class="page-link" href="#about"><span>about</span></a>
-        <a class="page-link" href="#shows"><span>shows</span></a>
-        <a class="page-link" href="#label"><span>label</span></a>
-        <a class="page-link" href="#merch"><span>merch</span></a>
-        <a class="page-link" href="#contact"><span>contact</span></a>
+        {%  assign sections = site.sections | sort: 'weight' %}
+        {% for section in sections %}
+          {% unless section.title == 'intro' %}
+            <a class="page-link" href="#{{ section.title }}"><span>{{ section.title }}</span></a>
+          {% endunless %}
+        {% endfor %}
       </div>
     </nav>
   </div>
