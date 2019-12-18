@@ -9,3 +9,10 @@ collections:
 
 plugins:
   - jekyll-commonmark
+
+publilsh_mode: editorial_wordflow
+
+backend:
+  name: github
+  repo: jillii/cakefactory # Path to your GitHub repository
+  open_authoring: true
