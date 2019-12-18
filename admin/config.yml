@@ -1,0 +1,11 @@
+# config.yml
+
+backend:
+  name: github
+  repo: jillii/cakefactory # Path to your GitHub repository
+  open_authoring: true
+
+media_folder: 'assets/images'
+collections:
+  - sections
+  - folder: _sections
