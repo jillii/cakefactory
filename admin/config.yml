@@ -6,6 +6,14 @@ backend:
   open_authoring: true
 
 media_folder: 'assets/images'
+
+publish_mode: editorial_workflow
+
 collections:
-  - sections
-  - folder: _sections
+  - name: sections
+    label: sections
+    folder: '_sections/'
+    fields:
+      - { name: title }
+      - { name: weight }
+      - { name: output }
