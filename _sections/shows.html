@@ -16,9 +16,9 @@ weight: 2
       <div itemprop="performers" class="lineup">lineup:
         {% for artist in show.lineup %}
           {% if forloop.first == true %}
-            <span>{{ artist }}</span>
+            <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">{{ artist }}</span></span>
           {% else %}
-            <span>//{{ artist }}</span>
+            <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">//{{ artist </span>}}</span>
           {% endif %}
         {% endfor %}
       </div>
