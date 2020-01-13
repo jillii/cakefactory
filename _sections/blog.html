@@ -1,0 +1,14 @@
+---
+title: blog
+weight: 6
+output: false
+---
+<h4>Blog</h4>
+<br>
+{% for post in site.data.posts %}
+	{% if forloop.index0 != 0 %}
+		<hr>
+	{% endif %}
+	<h5>{{ post.title }}<br>{{ post.date }}</h5>
+	<div>{{ post.content }}</div>
+{% endfor %}
