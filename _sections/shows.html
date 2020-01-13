@@ -12,7 +12,11 @@ weight: 2
       <meta itemprop="name" content="{{ show.title }}">
       <a itemprop="url" href="{{ show.link }}">{{ show.title }}</a>
       <time itemprop="startDate" datetime="{{ show.iso_date }}" class="date">date: {{ show.date }}</time>
-      <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">location: {{ show.location }}</div>
+      <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">
+        location: {{ show.location }}
+        <meta itemprop="name" content="Dorchester Art Project">
+        <meta itemprop="address" content="Boston, MA 02122">
+      </div>
       <div itemprop="performers" class="lineup">lineup:
         {% for artist in show.lineup %}
           {% if forloop.first == true %}
@@ -32,7 +36,11 @@ weight: 2
       <meta itemprop="name" content="{{ show.title }}">
       <a itemprop="url" href="{{ show.link }}">{{ show.title }}</a>
       <time itemprop="startDate" datetime="{{ show.iso_date }}" class="date">date: {{ show.date }}</time>
-      <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">location: {{ show.location }}</div>
+      <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">
+        location: {{ show.location }}
+        <meta itemprop="name" content="Dorchester Art Project">
+        <meta itemprop="address" content="Boston, MA 02122">
+      </div>      
       <div itemprop="performers" class="lineup">lineup:
         {% for artist in show.lineup %}
           {% if forloop.first == true %}
