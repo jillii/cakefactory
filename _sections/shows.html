@@ -8,16 +8,16 @@ weight: 2
 <div id="upcoming">
   <label>Upcoming</label>
   {% for show in upcoming_shows %}
-    <div class="show">
-      <a href="{{ show.link }}">{{ show.title }}</a>
-      <div class="date">date: {{ show.date }}</div>
-      <div class="location">location: {{ show.location }}</div>
-      <div class="lineup">lineup:
+    <div class="show" itemscope itemtype="http://schema.org/MusicEvent">
+      <a itemprop="url" href="{{ show.link }}">{{ show.title }}</a>
+      <time itemprop="startDate" datetime="{{ show.iso_date }}" class="date">date: {{ show.date }}</time>
+      <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">location: {{ show.location }}</div>
+      <div itemprop="performers" class="lineup">lineup:
         {% for artist in show.lineup %}
           {% if forloop.first == true %}
-            <span>{{ artist }}</span>
+            <span itemprop="musician">{{ artist }}</span>
           {% else %}
-            <span>//{{ artist }}</span>
+            <span itemprop="musician">//{{ artist }}</span>
           {% endif %}
         {% endfor %}
       </div>
@@ -27,19 +27,19 @@ weight: 2
 <div id="past">
   <label>Past</label>
   {% for show in past_shows %}
-      <div class="show">
-        <a href="{{ show.link }}">{{ show.title }}</a>
-        <div class="date">date: {{ show.date }}</div>
-        <div class="location">location: {{ show.location }}</div>
-        <div class="lineup">lineup:
-          {% for artist in show.lineup %}
-            {% if forloop.first == true %}
-              <span>{{ artist }}</span>
-            {% else %}
-              <span>//{{ artist }}</span>
-            {% endif %}
-          {% endfor %}
-        </div>
+    <div class="show" itemscope itemtype="http://schema.org/MusicEvent">
+      <a itemprop="url" href="{{ show.link }}">{{ show.title }}</a>
+      <time itemprop="startDate" datetime="{{ show.iso_date }}" class="date">date: {{ show.date }}</time>
+      <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">location: {{ show.location }}</div>
+      <div itemprop="performers" class="lineup">lineup:
+        {% for artist in show.lineup %}
+          {% if forloop.first == true %}
+            <span>{{ artist }}</span>
+          {% else %}
+            <span>//{{ artist }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   {% endfor %}
 </div>

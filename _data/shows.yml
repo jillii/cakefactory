@@ -1,5 +1,6 @@
 - title: 'Cake Factory #31'
   date: Feb 1, 19
+  iso_date: 2019-02-01
   location: Boston
   lineup:
     - Fathom Pira
@@ -11,6 +12,7 @@
 
 - title: 'Cake Factory #30'
   date: Nov 30, 19
+  iso_date: 2019-11-30
   location: Boston
   lineup:
     - Omniplus
@@ -21,6 +23,7 @@
 
 - title: 'Cake Factory #29'
   date: Oct 26, 19
+  iso_date: 2019-10-26
   location: Boston
   lineup:
     - Graaves

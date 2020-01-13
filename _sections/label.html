@@ -4,19 +4,22 @@ output: false
 weight: 3
 ---
 {% for release in site.data.releases %}
-    <div class="release">
-        <label>Name: </label><span>{{ release.title }}</span>
+    <div itemscope itemtype="http://schema.org/MusicEvent" class="release">
+        <label>Name: </label><span itemprop="name">{{ release.title }}</span>
         <br>
         <label>Artist: </label><span>{{ release.artist }}</span>
         <br>
-        <label>Date: </label><span>{{ release.date }}</span>
+        <label>Date: </label><span itemprop="datePublished" date="{{ release.iso_date }}">{{ release.date }}</span>
         <br>
         <label>Tracks: </label>
-        <ol>
+        <ol itemprop="tracks">
             {% for track in release.tracks %}
-                <li>{{ track }}</li>
+                <li itemscope itemtype="http://schema.org/MusicRecording">
+                    <span itemprop="name">{{ track }}</span>
+                    <meta itemprop="byArtist" content="{{ release.artist }}">
+                </li>
             {% endfor %}
         </ol>
-        <a href="{{ release.link }}" class="listen">Listen</a>
+        <a itemprop="url" href="{{ release.link }}" class="listen">Listen</a>
     </div>
 {% endfor %}
