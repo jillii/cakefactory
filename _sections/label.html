@@ -4,7 +4,7 @@ output: false
 weight: 3
 ---
 {% for release in site.data.releases %}
-    <div itemscope itemtype="http://schema.org/MusicEvent" class="release">
+    <div itemscope itemtype="http://schema.org/MusicRelease" class="release">
         <label>Name: </label><span itemprop="name">{{ release.title }}</span>
         <br>
         <label>Artist: </label><span>{{ release.artist }}</span>
