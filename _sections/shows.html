@@ -22,7 +22,7 @@ weight: 2
           {% if forloop.first == true %}
             <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">{{ artist }}</span></span>
           {% else %}
-            <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">//{{ artist }}</span></span>
+            <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">// {{ artist }}</span></span>
           {% endif %}
         {% endfor %}
       </div>
