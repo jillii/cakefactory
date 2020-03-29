@@ -89,3 +89,53 @@
     - Passersby
   link: https://www.facebook.com/events/688196611627666/
   past: true
+  
+- title: 'Cake Factory #26'
+  date: Jun 29, 19
+  iso_date: 2019-06-29
+  location: Boston
+  lineup:
+    - Parts 1&2
+    - Voice Training
+    - MCHN
+    - Echinacea x Psalixera
+  link: https://www.facebook.com/events/459124481504199/
+  past: true
+  
+- title: 'Cake Factory #25'
+  date: May 25, 19
+  iso_date: 2019-05-25
+  location: Boston
+  lineup:
+    - Final Object
+    - Minnow
+    - Tree Initiates
+    - Passersby
+    - Hardy and Hughes
+  link: https://www.facebook.com/events/826391381067727/
+  past: true
+
+- title: 'Cake Factory #24'
+  date: Apr 26, 19
+  iso_date: 2019-04-26
+  location: Boston
+  lineup:
+    - Jimmy Chan
+    - A. Campbell Payne
+    - Sam Mulligan
+    - Mark Lamp
+    - Lil Kevo 303
+  link: https://www.facebook.com/events/433086823903220/
+  past: true
+
+- title: 'Cake Factory #23'
+  date: Mar 30, 19
+  iso_date: 2019-03-30
+  location: Boston
+  lineup:
+    - Bad Handwriting
+    - GRAAVES
+    - Meta Sleep
+    - CLANCY
+  link: https://www.facebook.com/events/433086823903220/
+  past: true
