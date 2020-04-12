@@ -17,4 +17,4 @@ backend:
   repo: jillii/cakefactory # Path to your GitHub repository
   open_authoring: true
 
-staticman_url: https://api.staticman.net/v3/entry/github/jillii/cakefactory/master/comments
+fbc-comments-firebase: https://cfactoryboston.firebaseio.com/
