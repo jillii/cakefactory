@@ -2,32 +2,39 @@
 title: stream
 weight: 7
 output: false
-comment: true
 ---
-<div class="comments"></div>
+{% assign shows = site.data.shows | where: "current", true %}
+<div class="flexbox">
+	{% for show in shows %}
+		<div class="stream--container">
+			{{ show.stream }}
+		</div>
+		<div class="comments--container">
+			<div id="join-chat" class="center-hor-ver">
+				<button class="btn">join chat</button>
+			</div>
+			<div class="comments">
+				<div class="overlay popup-container">
+					<div class="popup">
+						<div class="error hidden" id="error--no-name">Please enter a name.</div>
+						name: <input type="text" id="chat-name">
+						<button class="btn" id="submit-name">enter</button>
+					</div>
+				</div>
+			</div>
 
-<button class="btn" id="join-chat">join chat</button>
-<div class="overlay popup-container">
-	<div class="popup">
-		name: <input type="text" id="chat-name">
-		<button class="btn" id="submit-name">enter</button>
-	</div>
+			<div class="comment-form--container hidden">
+
+				<h3>Leave a comment here</h3>
+
+				<form id="comment">
+				    <label for="message">Message</label>
+				    <textarea rows="1" id="message"></textarea>
+				    <input class="btn" type="submit" value="Post Comment">
+				    <div class="error hidden" id="error--no-message">You must enter a message.</div>
+				</form>
+			</div>
+		</div>
+	{% endfor %}
 </div>
 
-<div class="section--comments hidden">
-
-	<h3>Leave a comment</h3>
-
-	<form id="comment">
-	  <label for="message">Message</label>
-	  <textarea rows="3" id="message"></textarea>
-	  <input class="btn" type="submit" value="Post Comment">
-	</form>
-</div>
-
-<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
-<script src="/assets/js/blog.min.js"></script>
-<script src="/assets/js/like.min.js"></script>
