@@ -20,7 +20,7 @@
     - kokernutz
   link: https://www.facebook.com/events/219153146157226/
   current: true
-  stream: '<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcakefact%2Fvideos%2F532425060800036%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>'
+  stream: '<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcakefact%2Fvideos%2F532425060800036%2F&show_text=0&width=560" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>'
   past: true
   
 - title: 'Cake Factory #32'
