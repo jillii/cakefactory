@@ -1,3 +1,12 @@
+- title: 'Cake Factory #35'
+  date: May 30, 20
+  iso_date: 2020-05-30
+  location: https://www.facebook.com/cakefact/
+  lineup:
+
+  link: '/#stream'
+  past: false
+
 - title: 'Cake Factory #34'
   date: Apr 25, 20
   iso_date: 2020-04-25
@@ -8,7 +17,7 @@
     - YAKA
     - Paul Buser
   link: https://www.facebook.com/events/909496472827798/
-  past: false
+  past: true
   
 - title: 'Cake Factory #33'
   date: Mar 28, 20
