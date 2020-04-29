@@ -19,9 +19,43 @@
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="{{ '/assets/js/scripts.min.js' | relative_url }}"></script>
   <script type="text/javascript" src="{{ '/assets/js/comment.min.js' | relative_url }}"></script>
-  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  
+  <!-- <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
-  <script src="/assets/js/blog.min.js"></script>
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script> -->
+    
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyALi93BQ8vJIXf7pX6m4ZMIAATytOg4Fso",
+      authDomain: "cfactoryboston.firebaseapp.com",
+      databaseURL: "https://cfactoryboston.firebaseio.com",
+      projectId: "cfactoryboston",
+      storageBucket: "cfactoryboston.appspot.com",
+      messagingSenderId: "191553537801",
+      appId: "1:191553537801:web:b6d141c130172b896ff5d8",
+      measurementId: "G-1VFNTJLNBD"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+
+  <script type="text/javascript"  src="{{ '/assets/js/blog.min.js' | relative_url }}"></script>
 </html>
