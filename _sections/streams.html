@@ -29,30 +29,11 @@ output: false
 				<!-- <h3>Leave a comment here</h3> -->
 
 				<form id="comment">
-				    <textarea rows="1" id="message" placeholder="Enter a message"></textarea>
-				    <!-- <input class="btn" type="submit" value="Post Comment" autofocus="true"> -->
+				    <textarea rows="1" class="size-adjust" id="message" placeholder="Enter a message"></textarea>
+				    <input class="btn" type="submit" value="Post Comment" autofocus="true">
 				    <div class="error hidden" id="error--no-message">You must enter a message.</div>
 				</form>
 			</div>
 		</div>
 	{% endfor %}
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script> 
-<script>
-$(function() {
-  $('#message').on('keyup paste', function() {
-    var $el = $(this),
-        offset = $el.innerHeight() - $el.height();
-
-    if ($el.innerHeight() < this.scrollHeight) {
-      // Grow the field if scroll height is smaller
-      $el.height(this.scrollHeight - offset);
-    } else {
-      // Shrink the field and then re-set it to the scroll height in case it needs to shrink
-      $el.height(1);
-      $el.height(this.scrollHeight - offset);
-    }
-  });
-});
-</script>
