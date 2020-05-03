@@ -5,3 +5,5 @@ package*.json
 assets/_js
 assets/_sass
 _site
+.sass-cache/
+.jekyll-metadata
