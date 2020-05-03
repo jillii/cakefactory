@@ -7,17 +7,16 @@ output: false
 <div class="flexbox">
 	{% for show in shows %}
 		<div class="stream--container">
-			<!-- <iframe width="560" height="97%" src="//68.183.29.61:/LiveApp/play.html?name=test" frameborder="0" allowfullscreen></iframe> -->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/srnyVw-OR0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<span id="collapse-comments" onclick="$('#stream').toggleClass('collapse')"><span>&#10155;</span></span>
 		<div class="comments--container">
-			
 			<div class="comments">
-				<div id="join-chat" class="center-hor-ver">
-					<button class="btn">join chat</button>
-				</div>
+				
 			</div>
-			
+			<div id="join-chat" class="center-hor-ver">
+				<button class="btn">join chat</button>
+			</div>			
 			<div class="overlay popup-container">
 					<div class="popup">
 						<div class="error hidden" id="error--no-name">Please enter a name.</div>
