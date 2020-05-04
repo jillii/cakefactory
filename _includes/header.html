@@ -12,7 +12,7 @@
         {%  assign sections = site.sections | sort: 'weight' %}
         {% for section in sections %}
           {% unless section.title == 'intro' or section.title == 'stream' %}
-            <a class="page-link" href="#?{{ section.title }}"><span>{{ section.title }}</span></a>
+            <a class="page-link" href="#{{ section.title }}"><span>{{ section.title }}</span></a>
           {% endunless %}
         {% endfor %}
       </div>
