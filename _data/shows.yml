@@ -1,11 +1,15 @@
 - title: 'Cake Factory #35'
   date: May 30, 20
   iso_date: 2020-05-30
-  location: https://www.facebook.com/cakefact/
+  location: cakefactory.party/main
   lineup:
+    - 10_r3n
+    - Squelcher
+    - Assistant Director
 
   link: '/#stream'
   past: false
+  current: true
 
 - title: 'Cake Factory #34'
   date: Apr 25, 20
@@ -29,7 +33,6 @@
     - PRISMCELL
     - kokernutz
   link: https://www.facebook.com/events/219153146157226/
-  current: true
   past: true
   
 - title: 'Cake Factory #32'
