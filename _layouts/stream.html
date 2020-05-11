@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    {% assign current = site.data.shows | where: "current", true | first %}
+    {% assign page_title = page.title %}
+    <title>CF ~ {{ current.title }} </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/assets/images/site.webmanifest' | relative_url }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+	  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | relative_url }}" >
+	  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/jills-styles.css' | relative_url }}" >
+    <!-- <link defer="true" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css"> -->
+	</head>
+  <body>
+  	{% include header.html %}
+      <div class="wrapper">
+        <section id="stream" class="active">
+          {{ page_title }}
+          {% if page_title == "Main Room" %}
+            <a style="float: right" href="/ambient-room"><---Visit ambient room</a>
+            {% assign key = 'cakefactoryforever' %}
+          {% else %}
+            <a style="float: right" href="/main"><---Visit main room</a>
+            {% assign key = 'ambientroom' %}
+          {% endif %}
+          <div class="flexbox">
+            <div class="stream--container">
+              <iframe width="100%" src="//157.245.120.46:/LiveApp/play.html?name={{ key }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media;" allowfullscreen></iframe>
+            </div>
+            <span id="collapse-comments" onclick="$('#stream').toggleClass('collapse')"><span>&#10155;</span></span>
+            <div class="comments--container">
+              <div class="comments" id="comments">
+                
+              </div>
+              <div id="join-chat" class="center-hor-ver">
+                <button class="btn">join chat</button>
+              </div>      
+              <div class="overlay popup-container">
+                  <div class="popup">
+                    <div class="error hidden" id="error--no-name">Please enter a name.</div>
+                    name: <input type="text" id="chat-name">
+                    <button class="btn" id="submit-name">enter</button>
+                  </div>
+                </div>
+              <div class="comment-form--container hidden">
+
+                <!-- <h3>Leave a comment here</h3> -->
+
+                <form id="comment">
+                    <textarea rows="1" class="size-adjust" id="message" placeholder="Enter a message"></textarea>
+                    <input class="btn hidden" type="submit" value="Send">
+                    <div class="error hidden" id="error--no-message">You must enter a message.</div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>        }
+      </div>
+    <!-- {% include footer.html %} -->
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+
+  <!-- <script type="text/javascript" src="{{ '/assets/js/scripts.min.js' | relative_url }}"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script defer="true" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyALi93BQ8vJIXf7pX6m4ZMIAATytOg4Fso",
+      authDomain: "cfactoryboston.firebaseapp.com",
+      databaseURL: "https://cfactoryboston.firebaseio.com",
+      projectId: "cfactoryboston",
+      storageBucket: "cfactoryboston.appspot.com",
+      messagingSenderId: "191553537801",
+      appId: "1:191553537801:web:b6d141c130172b896ff5d8",
+      measurementId: "G-1VFNTJLNBD"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+
+  <script type="text/javascript"  src="{{ '/assets/js/blog.min.js' | relative_url }}"></script>
+</html>

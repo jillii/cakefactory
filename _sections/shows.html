@@ -3,53 +3,35 @@ title: shows
 output: false
 weight: 2
 ---
-{% assign past_shows = site.data.shows | where: "past", true %}
-{% assign upcoming_shows = site.data.shows | where: "past", false %}
-<div id="upcoming">
-  <label>Upcoming</label>
-  {% for show in upcoming_shows %}
-    <div class="show" itemscope itemtype="http://schema.org/MusicEvent">
-      <meta itemprop="name" content="{{ show.title }}">
-      <a itemprop="url" href="{{ show.link }}">{{ show.title }}</a>
-      <time itemprop="startDate" datetime="{{ show.iso_date }}" class="date">date: {{ show.date }}</time>
-      <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">
-        location: {{ show.location }}
-        <meta itemprop="name" content="Dorchester Art Project">
-        <meta itemprop="address" content="Boston, MA 02122">
-      </div>
-      <div itemprop="performers" class="lineup">lineup:
-        {% for artist in show.lineup %}
-          {% if forloop.first == true %}
-            <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">{{ artist }}</span></span>
-          {% else %}
-            <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">// {{ artist }}</span></span>
-          {% endif %}
-        {% endfor %}
-      </div>
+{% for show in site.data.shows %}
+  {% if show.past %}
+    <div id="past">
+      <label>Past</label>
+  {% else %}
+    <div id="upcoming">
+      <label>Upcoming</label>
+  {% endif %}
+  <div class="show" itemscope itemtype="http://schema.org/MusicEvent">
+    <meta itemprop="name" content="{{ show.title }}">
+    <a itemprop="url" href="{{ show.link }}">{{ show.title }}</a>
+    <time itemprop="startDate" datetime="{{ show.iso_date }}" class="date">date: {{ show.date }}</time>
+    <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">
+      location: {{ show.location }}
+      <meta itemprop="name" content="Dorchester Art Project">
+      <meta itemprop="address" content="Boston, MA 02122">
     </div>
-  {% endfor %}
-</div>
-<div id="past">
-  <label>Past</label>
-  {% for show in past_shows %}
-    <div class="show" itemscope itemtype="http://schema.org/MusicEvent">
-      <meta itemprop="name" content="{{ show.title }}">
-      <a itemprop="url" href="{{ show.link }}">{{ show.title }}</a>
-      <time itemprop="startDate" datetime="{{ show.iso_date }}" class="date">date: {{ show.date }}</time>
-      <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">
-        location: {{ show.location }}
-        <meta itemprop="name" content="Dorchester Art Project">
-        <meta itemprop="address" content="Boston, MA 02122">
-      </div>      
-      <div itemprop="performers" class="lineup">lineup:
-        {% for artist in show.lineup %}
-          {% if forloop.first == true %}
-            <span>{{ artist }}</span>
-          {% else %}
-            <span>// {{ artist }}</span>
-          {% endif %}
-        {% endfor %}
-      </div>
+    <div itemprop="performers" class="lineup">lineup:
+      {% for artist in show.lineup %}
+        {% if forloop.first == true %}
+          <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">{{ artist }}</span></span>
+        {% else %}
+          <span itemscope itemtype="https://schema.org/performer"><span itemprop="name">// {{ artist }}</span></span>
+        {% endif %}
+      {% endfor %}
     </div>
-  {% endfor %}
+    {% if show.current %}
+      <a href="/main" style="margin-top: 10px; display: block;">--->Go to stream<---</a>
+    {% endif %}
+  </div>
 </div>
+{% endfor %}
