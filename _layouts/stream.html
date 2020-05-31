@@ -15,6 +15,13 @@
 	</head>
   <body>
   	{% include header.html %}
+	  <style>
+		  @media screen and (max-width: 900px) {
+			  section#stream .comments--container {
+				  max-height: calc(100vh - 49vw);
+			  }
+		  }
+	  </style>
       <div class="wrapper">
         <section id="stream" class="active">
           {{ page_title }}
