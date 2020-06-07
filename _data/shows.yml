@@ -1,3 +1,16 @@
+- title: 'Cake Factory #36'
+  date: Jun 27, 20
+  iso_date: 2020-06-27
+  location: cakefactory.party/main
+  lineup:
+    - Ali Berger
+    - W00dy
+    - A. Campbell Payne
+
+  link: '/#shows'
+  past: false
+  current: false
+
 - title: 'Cake Factory #35'
   date: May 30, 20
   iso_date: 2020-05-30
@@ -9,7 +22,7 @@
     - Dimensions in Shadow
 
   link: https://www.facebook.com/events/2698051710429363/
-  past: false
+  past: true
   current: true
 
 - title: 'Cake Factory #34'
