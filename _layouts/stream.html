@@ -99,7 +99,7 @@
 
 <script type="text/javascript"  src="{{ '/assets/js/blog.min.js' | relative_url }}"></script>
 <script>
-	$(function(){
+	$('iframe').on('load', function() {
 		$('#video_container').style.maxWidth = 'none';
 	});
 </script>
