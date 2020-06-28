@@ -9,7 +9,7 @@
     - Cool and Frank
 
   link: 'https://www.facebook.com/events/279331926760204/'
-  past: false
+  past: true
   current: true
 
 - title: 'Cake Factory #35'
