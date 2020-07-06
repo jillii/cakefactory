@@ -3,10 +3,15 @@ title: shows
 output: false
 weight: 2
 ---
+
+{% assign upcoming_size = site.data.shows | where: "past", "false" | size %}
+
 {% for show in site.data.shows %}
   {% if show.past %}
-    <div id="past">
-      <label>Past</label>
+   <div id="past">
+      {% if forloop.index0 == upcoming_size %}
+        <label>Past</label>
+      {% endif %}
   {% else %}
     <div id="upcoming">
       <label>Upcoming</label>
