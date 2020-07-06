@@ -8,7 +8,6 @@
     - Jimmy Chan
     - Minnow
   link: /#shows
-  past: false
   current: false
 
 - title: 'Cake Factory #36'
@@ -21,8 +20,7 @@
     - A. Campbell Payne
     - Cool and Frank
   link: 'https://www.facebook.com/events/279331926760204/'
-  past: true
-  current: true
+current: true
   announcement: "In solidarity with the Black Lives Matter movement, and in support of the ongoing struggle against police brutality, we will be donating the proceeds from this event to the Massachusetts Bail Fund. Anyone who would like to support the fund can venmo @cake_factory. We also want to wish everyone a very happy pride month, and h a p p y b i r t h d a y t o w 0 0 d y <3<3<3 Thank you all for joining us this evening."
 
 - title: 'Cake Factory #35'
@@ -36,8 +34,7 @@
     - Dimensions in Shadow
 
   link: https://www.facebook.com/events/2698051710429363/
-  past: true
-  current: false
+current: false
 
 - title: 'Cake Factory #34'
   date: Apr 25, 20
@@ -49,8 +46,7 @@
     - YAKA
     - Paul Buser
   link: https://www.facebook.com/events/909496472827798/
-  past: true
-  
+
 - title: 'Cake Factory #33'
   date: Mar 28, 20
   iso_date: 2020-03-28
@@ -61,8 +57,7 @@
     - PRISMCELL
     - kokernutz
   link: https://www.facebook.com/events/219153146157226/
-  past: true
-  
+
 - title: 'Cake Factory #32'
   date: Feb 29, 20
   iso_date: 2020-02-29
@@ -73,8 +68,7 @@
     - Jonstar
     - Minnow
   link: https://www.facebook.com/events/520173285284742/
-  past: true
-  
+
 - title: 'Cake Factory #31'
   date: Feb 1, 20
   iso_date: 2020-02-01
@@ -84,7 +78,6 @@
     - Hardy & Hughes
     - '!@#$%'
   link: https://www.facebook.com/events/2505057896251585/
-  past: true
 
 - title: 'Cake Factory #30'
   date: Nov 30, 19
@@ -95,7 +88,6 @@
     - Dinnersss
     - Jimmy Chan
   link: https://www.facebook.com/events/975865359448979/
-  past: true
 
 - title: 'Cake Factory #29'
   date: Oct 26, 19
@@ -106,8 +98,7 @@
     - NADLOR
     - FEN
   link: https://www.facebook.com/events/2505057896251585/
-  past: true
-  
+
 - title: 'Cake Factory #28'
   date: Sep 28, 19
   iso_date: 2019-09-28
@@ -118,7 +109,6 @@
     - '!@#$%'
     - Minnow
   link: https://www.facebook.com/events/1384558218364757/
-  past: true
 
 - title: 'Cake Factory #27'
   date: Jul 27, 19
@@ -130,8 +120,7 @@
     - '!@#$%'
     - Passersby
   link: https://www.facebook.com/events/688196611627666/
-  past: true
-  
+
 - title: 'Cake Factory #26'
   date: Jun 29, 19
   iso_date: 2019-06-29
@@ -142,8 +131,7 @@
     - MCHN
     - Echinacea x Psalixera
   link: https://www.facebook.com/events/459124481504199/
-  past: true
-  
+
 - title: 'Cake Factory #25'
   date: May 25, 19
   iso_date: 2019-05-25
@@ -155,7 +143,6 @@
     - Passersby
     - Hardy and Hughes
   link: https://www.facebook.com/events/826391381067727/
-  past: true
 
 - title: 'Cake Factory #24'
   date: Apr 26, 19
@@ -168,7 +155,6 @@
     - Mark Lamp
     - Lil Kevo 303
   link: https://www.facebook.com/events/433086823903220/
-  past: true
 
 - title: 'Cake Factory #23'
   date: Mar 30, 19
@@ -180,4 +166,3 @@
     - Meta Sleep
     - CLANCY
   link: https://www.facebook.com/events/433086823903220/
-  past: true

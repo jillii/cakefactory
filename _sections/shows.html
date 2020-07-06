@@ -5,9 +5,11 @@ weight: 2
 ---
 
 {% assign upcoming_size = site.data.shows | where: "past", "false" | size %}
+{% assign today = "now" | date: "%s" %}
 
 {% for show in site.data.shows %}
-  {% if show.past %}
+  {%assign show_date = show.iso_date | date: '%s' %}
+  {% if show_date < today %}
    <div id="past">
       {% if forloop.index0 == upcoming_size %}
         <label>Past</label>
