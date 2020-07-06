@@ -8,7 +8,9 @@ weight: 2
 {% assign today = "now" | date: "%s" %}
 
 {% for show in site.data.shows %}
-  {%assign show_date = show.iso_date | date: '%s' %}
+
+  {% assign show_date = show.date | date: '%s' %}
+
   {% if show_date < today %}
    <div id="past">
       {% if forloop.index0 == upcoming_size %}
@@ -21,7 +23,7 @@ weight: 2
   <div class="show" itemscope itemtype="http://schema.org/MusicEvent">
     <meta itemprop="name" content="{{ show.title }}">
     <a itemprop="url" href="{{ show.link }}">{{ show.title }}</a>
-    <time itemprop="startDate" datetime="{{ show.iso_date }}" class="date">date: {{ show.date }}</time>
+    <time itemprop="startDate" datetime="{{ show.date }}" class="date">date: {{ show.date | date: '%b %d, %y' }}</time>
     <div itemprop="location" itemscope="http://schema.org/MusicVenue" class="location">
       location: {{ show.location }}
       <meta itemprop="name" content="Dorchester Art Project">

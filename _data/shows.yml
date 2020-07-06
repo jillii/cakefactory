@@ -1,6 +1,5 @@
 - title: 'Cake Factory #37'
-  date: Jul 25, 20
-  iso_date: 2020-07-25
+  date: 2020-07-25
   location: cakefactory.party/main
   lineup:
     - Robbie Rhodes
@@ -11,8 +10,7 @@
   current: false
 
 - title: 'Cake Factory #36'
-  date: Jun 27, 20
-  iso_date: 2020-06-27
+  date: 2020-06-27
   location: cakefactory.party/main
   lineup:
     - Ali Berger
@@ -24,8 +22,7 @@
   announcement: "In solidarity with the Black Lives Matter movement, and in support of the ongoing struggle against police brutality, we will be donating the proceeds from this event to the Massachusetts Bail Fund. Anyone who would like to support the fund can venmo @cake_factory. We also want to wish everyone a very happy pride month, and h a p p y b i r t h d a y t o w 0 0 d y <3<3<3 Thank you all for joining us this evening."
 
 - title: 'Cake Factory #35'
-  date: May 30, 20
-  iso_date: 2020-05-30
+  date: 2020-05-30
   location: cakefactory.party/main
   lineup:
     - 10_r3n
@@ -37,8 +34,7 @@
   current: false
 
 - title: 'Cake Factory #34'
-  date: Apr 25, 20
-  iso_date: 2020-04-25
+  date: 2020-04-25
   location: https://www.facebook.com/cakefact/
   lineup:
     - NADLOR
@@ -48,8 +44,7 @@
   link: https://www.facebook.com/events/909496472827798/
 
 - title: 'Cake Factory #33'
-  date: Mar 28, 20
-  iso_date: 2020-03-28
+  date: 2020-03-28
   location: https://www.facebook.com/cakefact/
   lineup:
     - Final Object
@@ -59,8 +54,7 @@
   link: https://www.facebook.com/events/219153146157226/
 
 - title: 'Cake Factory #32'
-  date: Feb 29, 20
-  iso_date: 2020-02-29
+  date: 2020-02-29
   location: Boston
   lineup:
     - Jimmy Chan
@@ -70,8 +64,7 @@
   link: https://www.facebook.com/events/520173285284742/
 
 - title: 'Cake Factory #31'
-  date: Feb 1, 20
-  iso_date: 2020-02-01
+  date: 2020-02-01
   location: Boston
   lineup:
     - Fathom Pira
@@ -80,8 +73,7 @@
   link: https://www.facebook.com/events/2505057896251585/
 
 - title: 'Cake Factory #30'
-  date: Nov 30, 19
-  iso_date: 2019-11-30
+  date: 2019-11-30
   location: Boston
   lineup:
     - Omniplus
@@ -90,8 +82,7 @@
   link: https://www.facebook.com/events/975865359448979/
 
 - title: 'Cake Factory #29'
-  date: Oct 26, 19
-  iso_date: 2019-10-26
+  date: 2019-10-26
   location: Boston
   lineup:
     - Graaves
@@ -100,8 +91,7 @@
   link: https://www.facebook.com/events/2505057896251585/
 
 - title: 'Cake Factory #28'
-  date: Sep 28, 19
-  iso_date: 2019-09-28
+  date: 2019-09-28
   location: Boston
   lineup:
     - PRISMCELL
@@ -111,8 +101,7 @@
   link: https://www.facebook.com/events/1384558218364757/
 
 - title: 'Cake Factory #27'
-  date: Jul 27, 19
-  iso_date: 2019-07-27
+  date: 2019-07-27
   location: Boston
   lineup:
     - Assistant Director
@@ -122,8 +111,7 @@
   link: https://www.facebook.com/events/688196611627666/
 
 - title: 'Cake Factory #26'
-  date: Jun 29, 19
-  iso_date: 2019-06-29
+  date: 2019-06-29
   location: Boston
   lineup:
     - Parts 1&2
@@ -133,8 +121,7 @@
   link: https://www.facebook.com/events/459124481504199/
 
 - title: 'Cake Factory #25'
-  date: May 25, 19
-  iso_date: 2019-05-25
+  date: 2019-05-25
   location: Boston
   lineup:
     - Final Object
@@ -145,8 +132,7 @@
   link: https://www.facebook.com/events/826391381067727/
 
 - title: 'Cake Factory #24'
-  date: Apr 26, 19
-  iso_date: 2019-04-26
+  date: 2019-04-26
   location: Boston
   lineup:
     - Jimmy Chan
@@ -157,8 +143,7 @@
   link: https://www.facebook.com/events/433086823903220/
 
 - title: 'Cake Factory #23'
-  date: Mar 30, 19
-  iso_date: 2019-03-30
+  date: 2019-03-30
   location: Boston
   lineup:
     - Bad Handwriting
