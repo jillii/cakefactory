@@ -34,10 +34,12 @@
           {% endif %}
           <div class="flexbox">
             <div class="stream--container">
-              <div id="ghost-video"></div>
-              <div class="marquee-container">
-                <div id="marquee" class="marquee"><p>In solidarity with the Black Lives Matter movement, and in support of the ongoing struggle against police brutality, we will be donating the proceeds from this event to the Massachusetts Bail Fund. Anyone who would like to support the fund can venmo @cake_factory. We also want to wish everyone a very happy pride month, and h a p p y b i r t h d a y t o w 0 0 d y <3<3<3 Thank you all for joining us this evening.</p></div>
-              </div>
+              {% if current.announcement %}
+                <div id="ghost-video"></div>
+                <div class="marquee-container">
+                  <div id="marquee" class="marquee"><p>{{ current.announcement }}</p></div>
+                </div>
+              {% endif %}
               <iframe src="//157.245.120.46:/LiveApp/play.html?name={{ key }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media;" allowfullscreen></iframe>
             </div>
             <span id="collapse-comments" onclick="$('#stream').toggleClass('collapse')"><span>&#10155;</span></span>
@@ -66,9 +68,6 @@
                 </form>
               </div>
             </div>
-          </div>
-          <div class="venmo-container" onclick="$(this).toggleClass('active')">
-            <div id="alexs-venmo">Help the dap. Send venmo to <a target="_blank" href="https://venmo.com/alexhardwich">@alexhardwich</a></div>
           </div>
         </section>
       </div>
