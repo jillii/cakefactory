@@ -18,6 +18,11 @@
   icon: fab fa-soundcloud
   font-awesome: true
 
+- title: youtube
+  link: https://www.youtube.com/channel/UCk26SFWNm0PA4OQK8pOPvEw
+  icon: fa fa-youtube-play
+  font-awesome: true
+
 - title: resident advisor
   link: https://www.residentadvisor.net/profile/cakefactory
   icon: /assets/images/ra.png
