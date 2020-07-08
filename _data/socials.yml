@@ -20,7 +20,7 @@
 
 - title: youtube
   link: https://www.youtube.com/channel/UCk26SFWNm0PA4OQK8pOPvEw
-  icon: fa fa-youtube-play
+  icon: icon-youtube
   font-awesome: true
 
 - title: resident advisor
