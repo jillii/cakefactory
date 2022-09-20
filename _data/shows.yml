@@ -1,10 +1,21 @@
+- title: 'Cake Factory #39'
+  date: 2022-10-30
+  location: Cantab Lounge Downstairs
+  lineup:
+    - Passersby
+    - Dinnersss
+    - Fathom Pira
+    - Minnow
+  link: https://www.facebook.com/events/649373489763366
+  current: true
+
 - title: 'Cake Factory in the Woods'
   date: 2021-07-17
   location: cakefactory.party/main
   lineup:
     - Cake crew and friends
   link: #
-  current: true
+  current: false
   announcement: "Hi from cake factory"
 
 - title: 'Cake Factory #37'
