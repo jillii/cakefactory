@@ -40,7 +40,11 @@
                   <div id="marquee" class="marquee"><p>{{ rand_video.title }}'s set for Cake Factory. Shout out to everyone tuning in. Love and miss you all.</p></div>
                 </div>
               {% endif %}
-              <iframe src="{{ rand_video.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              {% if page_title == 'Main Room' %}
+                <iframe src="{{ rand_video.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              {% else %}
+              <iframe src="https://www.youtube.com/embed/or2dYHHUypc?si=boQbbFWi9sGGFIQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              {% endif %}
             </div>
             <span id="collapse-comments" onclick="$('#stream').toggleClass('collapse')"><span>&#10155;</span></span>
             <div class="comments--container">
