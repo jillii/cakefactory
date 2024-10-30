@@ -3,6 +3,7 @@
 	<head>
     {% assign current = site.data.shows | where: "current", true | first %}
     {% assign page_title = page.title %}
+    {% assign rand_video = site.data.sets | sample %}
     <title>CF ~ {{ current.title }} </title>
     {% include favicon.html %}
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
@@ -34,10 +35,10 @@
               {% if current.announcement %}
                 <div id="ghost-video"></div>
                 <div class="marquee-container">
-                  <div id="marquee" class="marquee"><p>{{ current.announcement }}</p></div>
+                  <div id="marquee" class="marquee"><p>{{ rand_video.title }}'s set for Cake Factory. Shout out to everyone tuning in. Love and miss you all.</p></div>
                 </div>
               {% endif %}
-              <iframe src="https://www.youtube.com/embed/pBJuwDodJSE?si=pUMWJbwXAREbT7dR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe src="{{ rand_video.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <span id="collapse-comments" onclick="$('#stream').toggleClass('collapse')"><span>&#10155;</span></span>
             <div class="comments--container">
