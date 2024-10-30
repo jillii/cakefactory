@@ -1,3 +1,25 @@
+- title: 'Cake Factory #42'
+  date: 2023-07-27
+  location: "O'Brien's Pub"
+  lineup:
+    - Clock Serum
+    - Homeworld
+    - '!@#$%'
+    - Minnow
+  link: https://www.facebook.com/events/653929846586727
+  current: false
+
+- title: 'Cake Factory #41'
+  date: 2023-05-20
+  location: Cantab Lounge Downstairs
+  lineup:
+    - ximena
+    - TONYMAN
+    - Alfredo
+    - Final Object
+  link: https://www.facebook.com/events/1239858796652331
+  current: false
+
 - title: 'Cake Factory #40'
   date: 2023-02-18
   location: Cantab Lounge Downstairs
@@ -7,6 +29,7 @@
     - Assistant Director
     - Fathom Pira
   link: https://www.facebook.com/events/866475537888923/
+  current: false
 
 - title: 'Cake Factory #39'
   date: 2022-10-30
