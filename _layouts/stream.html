@@ -3,8 +3,6 @@
 	<head>
     {% assign current = site.data.shows | where: "current", true | first %}
     {% assign page_title = page.title %}
-    {% assign rand = site.time | date: "%s%N" | modulo: site.data.sets.size %}
-    {% assign rand_video = site.data.sets[rand] %}
 
     <title>CF ~ {{ current.title }} </title>
     {% include favicon.html %}
@@ -41,7 +39,11 @@
                 </div>
               {% endif %}
               {% if page_title == 'Main Room' %}
-                <iframe src="{{ rand_video.link }}&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="randomize">
+                  {% for video in site.data.sets %}
+                    <iframe data-src="{{ video.link }}&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  {% endfor %}
+                  </div>
               {% else %}
               <iframe src="https://www.youtube.com/embed/or2dYHHUypc?si=boQbbFWi9sGGFIQo&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               {% endif %}
@@ -76,6 +78,7 @@
         </section>
       </div>
     {% include footer.html %}
+    {% include randomize.html %}
   </body>
   <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
 
